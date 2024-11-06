@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choix</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function allerVersAutrePage() {
+        // Déplacer l'utilisateur vers une autre page
+        window.location.href = "Pinitial.html";
+    }
+    function page_suivant(){
+        window.location.href="Employer/index.php"
+    }
+    </script>
+    <style>
+        /* Ajoutez vos styles CSS ici */
+        .btn {
+    font-size: 40px; /* Taille du texte à l'intérieur des boutons */
+    padding: 30px 200px; /* Espacement intérieur des boutons pour plus de visibilité */
+    border-radius: 190px; /* Ajoute des coins arrondis aux boutons */
+    background-color: gainsboro; /* Couleur de fond des boutons */
+    color: rgb(110, 185, 223); /* Couleur du texte à l'intérieur des boutons */
+    border: none; /* Supprime les bordures des boutons */
+    cursor: pointer; /* Change le curseur en main au survol des boutons */
+    box-shadow: 0 0 5px rgb(238, 241, 241), 0 0 25px rgb(248, 248, 248);
+}
+button:hover {box-shadow: 0 0 5px rgb(239, 241, 241), 0 0 25px rgb(245, 247, 247),0 0 50px rgb(240, 243, 243), 0 0 100px rgb(244, 245, 245),0 0 200px rgb(244, 245, 245);}
+body { background-color:rgb(242, 239, 239);}
+h1 {
+    font-size: 3em; /* Taille du titre */
+    color: rgb(0, 204, 255); /* Couleur du texte */
+    font-family: Arial, sans-serif; /* Police de caractères */
+    text-align: center; /* Centrer le texte */
+    animation-play-state: running;
+    font-style: oblique;
+    }
+     </style>
+</head>
+<body>
+    <header class="card card-body shad-sm border-0 rounded-0 bg-transparent">
+        <h1  >Bienvenue sur notre site de communication</h1>
+    </header>
+    <br />
+    <br />
+    <br />
+   <div class="container">
+    <div class="row">
+        <div class="col-6"> <input type="button" value="client" name="b12" onclick="allerVersAutrePage()" class="btn btn-primary"></div>
+        <div class="col-6"><input type="button" value="employer" name="b11" onclick="page_suivant()" class="btn btn-primary"></div> </div>
+    </div>
+   
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br /><br />
+    <br />
+ 
+    <div class="card-body mb-0 fixed-bottom" style="background-color: #dedcd7; border-radius: 50px 50px 0 0 ;">
+        <h3>Contact</h3>
+        <div class="row">
+            <div class="col-4">
+                <div><a href="https://fr-fr.facebook.com/"> <img src="Assets/images/f.png" class="me-3" width="25px"> Facebook</a></div>
+                <div><a href="https://youtube.com/"> <img src="Assets/images/y.jpeg" class="me-3"  width="25px"> Youtube</a></div>
+            </div>
+            <div class="col-4">
+                <div><a href="+21656902826"> <img src="Assets/images/w.jpeg" class="me-3"  width="25px"> WhatsApp</a></div>
+                <div> <a href="instagram.com"> <img src="Assets/images/ins.jpeg" class="me-3"  width="25px"> instagram</a></div>
+            </div>
+            <div class="col-4">
+                <div><a href="mellitiassma@gmail.com"> <img src="Assets/images/m.jpg" class="me-3"  width="25px"> mellitiassma@gmail.com</a></div>
+            </div>
+            <div class="col-12">
+                <h5>&copy; 2024 Nom de votre entreprise. Tous droits réservés.</h5>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(242, 239, 239);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], input[type=number], input[type=date], input[type=email] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+    <script>
+    function page_suivant(){
+        window.location.href="fonction.html"
+    }
+</script>
+</head>
+<body>
+    <div class="card card-body shadow-sm rounded-0 border-0 fixed-top">
+       <h4 class="text-secondary">Page d'Inscription <span class="bi bi-alarm"></span></h4> 
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="container">
+        <form action="Employer/log_in.php"  method="post"   >
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
+                    <div class="card card-body">
+                    <label for="tlf">Telephone</label>
+                    <input type="number" id="tlf" name="tlf" size="8"  required>
+
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    
+                        <button type ="submit" class="w-100 btn btn-success" name ="StartBtn"   >Log In</button>
+                    </div> 
+
+                </div>
+                
+
+            </div>
+              
+        </form>
+    <!-- onclick="page_suivant()" -->
+        
+    
+    <br />
+    <br />
+    <br />
+    <br />
+     <div class="card card-body mb-4 rounded">
+            <a href="contact.html" >Inscription ici </a>
+     </div>
+</div>
+    
+    <!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

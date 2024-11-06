@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Services</title>
+    <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .service {
+            width: 300px;
+            height: 200px;
+            background-color: #cdc8c8;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+        body { background-color:rgb(242, 239, 239);}
+    </style>
+</head>
+<body>
+
+
+<div class="services-container">
+
+    <div class="service" id="service1"  class="btn btn-secondary" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Planification du projet,Organisation du projet, Exécution du projet,Contrôle du projet et Clôture du projet">
+        <h2>Gestion de projet</h2>
+    </div>
+    <div class="service" id="service2" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="la formation et le développement professionnel sont des éléments cruciaux de la gestion des ressources humaines qui contribuent à l'épanouissement des individus, à l'amélioration des performances organisationnelles et à la réalisation des objectifs stratégiques de l'entreprise. ">
+        <h2>Formation et développement professionnel</h2>
+    </div>
+    <div class="service" id="service3" class="btn btn-secondary" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="les services de design graphique et de branding sont essentiels pour créer une identité visuelle forte et mémorable qui distingue une entreprise ou une marque sur le marché et suscite l'engagement et la fidélité des consommateurs.">
+        <h2>Services de design graphique et de branding</h2>
+    </div>
+    <div class="service" id="service4"data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content=" la gestion des ressources humaines est une fonction stratégique qui contribue à la réussite globale de l'organisation en maximisant le potentiel humain et en créant un environnement de travail propice à la productivité, à l'engagement et à la satisfaction des employés.">
+        <h2>Gestion des ressources humaines</h2>
+    </div>
+    <div class="service" id="service5" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="La comptabilité est le processus de suivi, d'enregistrement et de rapport des transactions financières d'une entreprise.">
+        <h2>Services de comptabilité et de finance</h2>
+    </div>
+    <div class="service" id="service6" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Le développement de logiciels et d'applications est un processus de création de programmes informatiques et de solutions logicielles pour répondre à des besoins spécifiques. ">
+        <h2>Développement de logiciels et d'applications</h2>
+    </div>
+    <div class="service" id="service7" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Les services juridiques désignent l'ensemble des prestations fournies par des professionnels du droit pour conseiller, représenter et assister les individus, les entreprises et les organisations dans des questions juridiques.">
+        <h2>Services juridiques</h2>
+    </div>
+    <div class="service" id="service8" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Les services de marketing numérique sont des prestations fournies par des professionnels du marketing spécialisés dans la promotion et la commercialisation de produits, de services ou de marques sur les plateformes numériques. ">
+        <h2>Services de marketing numérique</h2>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+    var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+        container: 'body'
+    })
+</script>
+<div class="card-body mb-0" style="background-color: #dedcd7; border-radius: 50px 50px 0 0 ;">
+    <h3>Contact</h3>
+    <div class="row">
+        <div class="col-4">
+            <div><a href="https://fr-fr.facebook.com/"> <img src="Assets/images/f.png" class="me-3" width="25px"> Facebook</a></div>
+            <div><a href="https://youtube.com/"> <img src="Assets/images/y.jpeg" class="me-3"  width="25px"> Youtube</a></div>
+        </div>
+        <div class="col-4">
+            <div><a href="+21656902826"> <img src="Assets/images/w.jpeg" class="me-3"  width="25px"> WhatsApp</a></div>
+            <div> <a href="instagram.com"> <img src="Assets/images/ins.jpeg" class="me-3"  width="25px"> instagram</a></div>
+        </div>
+        <div class="col-4">
+            <div><a href="mellitiassma@gmail.com"> <img src="Assets/images/m.jpg" class="me-3"  width="25px"> mellitiassma@gmail.com</a></div>
+        </div>
+        <div class="col-12">
+            <h5>&copy; 2024 Nom de votre entreprise. Tous droits réservés.</h5>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
